@@ -44,6 +44,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml'
+
 gem 'bootstrap-sass'
 
 gem 'simple_form'

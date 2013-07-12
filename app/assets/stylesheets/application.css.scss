@@ -13,10 +13,11 @@
  * The line require_tree . tells Sprockets to include every file inside the stylesheets directory. 
  The problem is that every SASS file is compiled separately into a CSS file before the files are 
  combined so variables aren’t shared between files.
-
+* = r equire _self
+* = r equire _ tree
  */
 
-@import("bootstrap_and_overrides.css.scss");
+@import "bootstrap_and_overrides.css.scss";
 
 .content {
   background-color: #eee;

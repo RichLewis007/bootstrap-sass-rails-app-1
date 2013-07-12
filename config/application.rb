@@ -6,6 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+
 module BootstrapSassRailsApp1
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -19,5 +20,10 @@ module BootstrapSassRailsApp1
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Due to a change in Rails 4 that prevents images from being compiled in vendor and lib, 
+    # you'll need to add the following line to your application.rb:
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
   end
 end

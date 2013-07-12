@@ -1,6 +1,7 @@
-/* You may wish to modify the Twitter Bootstrap CSS rules; you can do so in the application.css.scss file but placing changes to Twitter Bootstrap CSS rules in the bootstrap_and_overrides.css.scss file will keep your CSS better organized. 
+/* placing changes to Twitter Bootstrap CSS rules in the bootstrap_and_overrides.css.scss file will keep your CSS better organized. 
 
-The file app/assets/stylesheets/bootstrap_and_overrides.css.scss is automatically included and compiled into your Rails application.css file by the *= require_tree . statement in the app/assets/stylesheets/application.css.scss file.*/
+/* example Bootstrap variable config: */
+$btnPrimaryBackground: #f00;
 
 @import "bootstrap";
 
